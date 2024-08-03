@@ -1,3 +1,112 @@
-main {
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
   font-family: "Dosis", arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  height: 20vh;
+}
+
+.logo,
+.company {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(216, 214, 214);
+}
+
+nav div {
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: gray;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.spotlight {
+  position: relative;
+  width: 80vw;
+  background-color: rgb(216, 214, 214);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.img-title {
+  position: absolute;
+  width: 50%;
+  background-color: rgb(99, 99, 99);
+  color: white;
+  bottom: 40px;
+  right: 40px;
+  z-index: 2;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  max-width: 80%;
+  height: auto;
+  padding: 20px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 300px;
+  background-color: lightgreen;
+  justify-content: flex-start;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  text-align: center;
+  background-color: lightgray;
 }/*# sourceMappingURL=fullsite.css.map */
