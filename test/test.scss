@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    min-height: 50px;
+    background-color: gold;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    // background-color: lightgray;
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    background-color: gray;
+    width: 500px;
+    height: 100px;
+    margin: 20px;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: gold;
+}

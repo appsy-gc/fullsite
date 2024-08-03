@@ -7,8 +7,8 @@ html {
 }
 
 body {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
     background-color: $primary-bg;
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    height: 20vh;
+
 }
 
 .logo,
@@ -32,48 +32,55 @@ header {
 }
 
 .logo img {
-    // transform: scale(0.8);
+    
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     background-color: $primary-color;
+    box-shadow: 0 5px 5px darkgray;
 }
 
 nav div {
-    padding: 10px;
-    // margin: 10px;
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
 }
 
 nav a {
     text-decoration: none;
     color: black;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
     background-color: gray;
+    // padding: 10px 20px;
     color: white;
 }
 
 main {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-flow: column;
     align-items: center;
-    margin-top: 10px;
-    height: 70vh;
-    overflow: hidden;
+    flex-grow: 1;
+    margin: 30px 0;
 }
 
 .spotlight {
     position: relative;
     width: 80vw;
+    min-width: 300px;
+    max-width: 800px;
     background-color: $primary-color;
     border-radius: 10px;
-    margin: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
 }
 
 .img-title {
@@ -85,39 +92,71 @@ main {
     right: 40px;
     z-index: 2;
     text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1rem;
     border-radius: 5px;
+    border: 1px solid $primary-bg;
     padding: 10px;
+    box-shadow: 4px 3px 2px 0px rgb(255, 255, 255);
 }
 
 .img {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 200px;
 }
 
 .img img {
-    max-width: 80%;
-    height: auto;
-    padding: 20px;
-}
-
-.box-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
-    height: 300px;
-    background-color: lightgreen;
-    justify-content: flex-start;
+    max-width: 90%;
+    padding: 25px 0;
 }
 
 footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
     text-align: center;
     background-color: lightgray;
+    height: 100px;
+}
+
+.fa-brands {
+    filter: grayscale(100%);
+    transform: scale(2);
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav div {
+        margin: 0 40px;
+    }
+    
+    nav a {
+        // // flex-grow: 0;
+        // padding: 10px 0;
+    }
+    
+    .img-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .img-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    
+    main {
+        flex-flow: wrap;
+        justify-content: space-around;
+    }
 }
