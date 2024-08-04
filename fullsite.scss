@@ -32,28 +32,37 @@ header {
 }
 
 .logo img {
-    
+    border-radius: 50px;
+    transform: scale(1.2);
+}
+
+header .logo {
+    margin-top: 20px;
 }
 
 nav {
     display: flex;
+    height: 50px;
     justify-content: space-around;
+    align-items: center;
     background-color: $primary-color;
     box-shadow: 0 5px 5px darkgray;
 }
 
 nav div {
     display: flex;
+    // align-items: center;
     text-align: center;
+    height: 100%;
     margin: 0;
-    padding: 5px;
+    padding: 0 10px;
 }
 
 nav a {
+    align-content: center;
     text-decoration: none;
     color: black;
-    border-radius: 5px;
-    padding: 10px 0;
+    padding: 5px;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -125,18 +134,18 @@ footer {
     transform: scale(2);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 590px) {
     nav {
         justify-content: center;
     }
 
     nav div {
-        margin: 0 40px;
+        // margin: 0 40px;
     }
     
     nav a {
         // // flex-grow: 0;
-        // padding: 10px 0;
+        padding: 5px 30px;
     }
     
     .img-title {
