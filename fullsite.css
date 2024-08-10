@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+header {
+  background-color: #F6C582;
+}
+
 .logo,
 .company {
   text-align: center;
@@ -37,8 +41,8 @@ nav {
   height: 50px;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(216, 214, 214);
-  box-shadow: 0 5px 5px darkgray;
+  background-color: #33687D;
+  box-shadow: 0 7px 5px gray;
 }
 
 nav div {
@@ -52,14 +56,14 @@ nav div {
 nav a {
   align-content: center;
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 5px;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 nav a:hover {
-  background-color: gray;
+  background-color: #FA5373;
   color: white;
 }
 
@@ -115,7 +119,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color: lightgray;
+  background-color: #F6C582;
   height: 100px;
 }
 
